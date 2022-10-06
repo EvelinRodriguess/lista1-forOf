@@ -3,14 +3,30 @@
     //PROBLEMA
     //Considere a lista de nomes abaixo:
     // let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
-    //Identifique todos os nomes que contém "João" em qualquer parte do nome e separe-os em uma lista. Apresente a lista ao final do programa. Considere que poderão haver "Joãos" sem ~ (til).
+    //Identifique todos os nomes que contém "João" em qualquer parte do nome e separe-os em uma lista. Apresente a lista ao final do programa.
+    // Considere que poderão haver "Joãos" sem ~ (til).
 
     //ENTRADA
+
     let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
+    let nomeJoao = [];
+    let semJoao = [];
 
     //PROCESSAMENTO
 
+    for(let joao of listaDeNomes){
+        joao.toUpperCase()
+        joao.replace("Ã","A") === "JOAO"
+        let procurar = joao.search("joao");
+        if (procurarJoao === 0){
+            semJoao.push(joao);
+        }else{
+            comJoao.push(joao);
+        }
+    }
 
     //SAÍDA
+
+    document.write(comJoao.join(", ") + " e " + semJoao.join(", "));
 
 </script>
