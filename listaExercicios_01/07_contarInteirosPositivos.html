@@ -5,13 +5,25 @@
     // let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
     //Identifique APENAS os números INTEIROS e POSITIVOS. Adicione-os em uma lista e apresente ao fim do programa, indicando também quantos números foram localizados.
 
+   
     //ENTRADA
-    
+
     let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
+    let inteirosPositivos = [];
+    
 
     //PROCESSAMENTO
 
+    for(let lista of listaDeNumeros){
+        if (lista > 0 && lista % 1 === 0){
+            inteirosPositivos.push(lista);
+        }
+        
+    }
+
+    const totalInteiro = inteirosPositivos.length 
 
     //SAÍDA
 
+    document.write("<li>Numeros inteiros positivos: " + inteirosPositivos.join (", ") + "</li></br><li> Total de números localizados: " + totalInteiro )
 </script>

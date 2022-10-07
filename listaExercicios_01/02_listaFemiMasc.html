@@ -10,24 +10,25 @@
     //ENTRADA
 
     let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
-    let generoMasculino = ["João", "José", "Júlio"];
-    let generoFeminino = ["Maria", "Amanda", "Beatriz", "Olívia"];
+    let generoMasculino = [];
+    let generoFeminino = [];
 
     //PROCESSAMENTO
 
     for(nomes of listaDeNomes){
-        const masculinoOuFeminino = prompt("Informe qual é o genero " + listaDeNomes + " (M)-Masculino (F)-Feminino")
-        if(masculinoOuFeminino = "M"){
-            document.write(`<li> Nomes: ${generoMasculino}</li>`)
+        const masculinoOuFeminino = prompt("Informe qual é o genero " + nomes + " (M)-Masculino (F)-Feminino").toUpperCase();
+        if(masculinoOuFeminino === "M"){
+           generoMasculino.push(nomes)
         }
-        else{   
-            document.write(`<li> Nomes: ${generoFeminino} </li>`)
+        else{ 
+            generoFeminino.push(nomes)
         }
-
 
     }
 
+    //SAÍDA
 
+     document.write("Nomes masculinos: <li>" + generoMasculino.join(" , ") + " </li> Nomes Femininos: <li>" + generoFeminino.join(" , ") + ".</li>")
     //SAÍDA
 
 </script>

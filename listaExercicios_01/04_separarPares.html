@@ -10,16 +10,19 @@
 
     let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
     let numerosPares = [];
-    let demais = [];
-
-
 
     //PROCESSAMENTO
 
+    const elementos = listaDeItens.length
+
     for(pares of listaDeItens){
-        
+        if(pares % 2 === 0)
+        numerosPares.push(pares)
     }
 
+   
     //SAÍDA
+
+ document.write("<li>Números Pares: " + numerosPares.join(", ") + "</li></br>" + "<li> A quantidade de elementos da lista é: " + elementos +  "</li>")
 
 </script>
