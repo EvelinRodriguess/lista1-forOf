@@ -14,17 +14,17 @@
 
     //PROCESSAMENTO
 
-    for(let nomes of listaDeNomes){
-        if (nomes.toUpperCase().replace("Ã", "A").search("JOAO") >= 0){
-        nomesComJoao.push(nomes)
-       }
+    for (let nomes of listaDeNomes) {
+        if (nomes.toUpperCase().replace("Ã", "A").search("JOAO") >= 0) {
+            nomesComJoao.push(nomes)
+        }
 
     }
-    
- 
+
+
     //SAÍDA
 
-    document.write("<li>Os nomes que tem joão são: " + nomesComJoao.join(" , ") );
-    
+    document.write("<li>Os nomes que tem joão são: " + nomesComJoao.join(" , "));
+
 
 </script>

@@ -15,12 +15,12 @@
 
     //PROCESSAMENTO
 
-    for(nomes of listaDeNomes){
+    for (nomes of listaDeNomes) {
         const masculinoOuFeminino = prompt("Informe qual é o genero " + nomes + " (M)-Masculino (F)-Feminino").toUpperCase();
-        if(masculinoOuFeminino === "M"){
-           generoMasculino.push(nomes)
+        if (masculinoOuFeminino === "M") {
+            generoMasculino.push(nomes)
         }
-        else{ 
+        else {
             generoFeminino.push(nomes)
         }
 
@@ -28,7 +28,7 @@
 
     //SAÍDA
 
-     document.write("Nomes masculinos: <li>" + generoMasculino.join(" , ") + " </li> Nomes Femininos: <li>" + generoFeminino.join(" , ") + ".</li>")
+    document.write("Nomes masculinos: <li>" + generoMasculino.join(" , ") + " </li> Nomes Femininos: <li>" + generoFeminino.join(" , ") + ".</li>")
     //SAÍDA
 
 </script>

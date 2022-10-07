@@ -8,23 +8,23 @@
     //ENTRADA
 
     let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    let impar = [];
-    let par = [];
+    let numeroImpar = [];
+    let numeroPar = [];
 
     //PROCESSAMENTO
 
-    for (let lista of listaDeNumeros){
-        if (lista % 2 === 0){
-            par.push(lista);
+    for (let numeros of listaDeNumeros) {
+        if (numeros % 2 === 0) {
+            numeroPar.push(numeros);
         } else {
-            impar.push(lista);
+            numeroImpar.push(numeros);
         }
     }
 
     //SAÍDA
 
-    document.write( par.sort((a, b) => (a - b)).join(" , ") + "</br>" +  impar.sort((b, a) => (a - b)).join(" , ") );
-   
+    document.write(numeroPar.sort((a, b) => (a - b)).join(" , ") + "</br>" + numeroImpar.sort((b, a) => (a - b)).join(" , "));
+
 
     //SAÍDA
 

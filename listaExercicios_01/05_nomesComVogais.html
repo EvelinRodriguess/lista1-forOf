@@ -14,19 +14,19 @@
     let nomesComVogal = [];
     let demaisNomes = [];
 
-    for(let nomes of listaDeNomes){
-        let letraInicial = nomes[0]. charAt(0);
-        if(letraInicial === "A" || letraInicial === "E" || letraInicial === "I" || letraInicial === "O" || letraInicial === "U"){
+    for (let nomes of listaDeNomes) {
+        let letraInicial = nomes[0].charAt(0);
+        if (letraInicial === "A" || letraInicial === "E" || letraInicial === "I" || letraInicial === "O" || letraInicial === "U") {
             nomesComVogal.push(nomes);
-        
+
         }
-        else{ 
+        else {
             demaisNomes.push(nomes);
         }
     }
     document.write(`Nomes que começam com vogal: ${nomesComVogal.sort().join(" , ")}</br>`);
     document.write(`Demais nomes: ${demaisNomes.sort().join(" , ")}`);
-    
+
 
     //SAÍDA
 
